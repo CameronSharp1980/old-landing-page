@@ -5,6 +5,7 @@
 body{
     margin: 0;
     height: 100vh;
+    font-size: 100%;
     background-image: url("../img/pexels-photo-235994.jpeg");
     background-repeat: repeat;
     background-attachment: fixed;
@@ -12,6 +13,13 @@ body{
 h1, h2, h3, h4, h5, h6, .nav-list{
     margin: 0;
     padding: 0;
+}
+.purple{
+    background-color: purple; //to test divs
+}
+.test{ //delete later
+    outline: 2px solid red;
+    background-color: purple;
 }
 
 // -------------------
@@ -36,6 +44,13 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 .space-between{
     justify-content: space-between;
 }
+.bio-col{
+    height: 25rem;
+}
+.bio-col h2{
+    padding: 3rem;
+    // font-size: 3rem;
+}
 
 // ---------------------
 // ***Bootstrap Section Related Rules***
@@ -43,17 +58,43 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 
 // ***Row / Column***
 .opaque{
-    background-image: url("../img/pexels-photo-220182.jpeg");
-    height: 30rem;
+    background-color: white;
+    // background-image: url("../img/pexels-photo-220182.jpeg");
+    // height: 30rem; //Essentially a static height  *Do not use*(?)
 }
 .transparent{
-    height: 30rem;
+    // height: 30rem; //Essentially a static height *Do not use*(?)
+}
+.bio-row{
+    height: 25rem;
+}
+.full-height{
+    height: 100%;
+}
+.skills-col{
+    outline: 2px solid red;
+}
+.skills-thumb-img{
+    width: 150px;
 }
 
 // ------------------
 // ***Custom Rules***
 // ------------------
 
+.logo{
+    margin-left: 1.5rem;
+}
+.top-nav{
+    color: #aaaaaa; //temp
+    height: 10rem; //temp
+    // background-color: yellow; //temp
+}
+.nav-item{
+    font-size: 2rem;
+    list-style-type: none;
+    margin-right: 1.5rem;
+}
 .banner{
     min-height: 100vh;
     background-image: url("../img/pexels-photo-360912-25percent.jpg");
@@ -65,31 +106,85 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 .bck-rpt{
     background-repeat: repeat;
 }
-.top-nav{
-    color: #aaaaaa; //temp
-    height: 10rem; //temp
-    // background-color: yellow; //temp
-}
-.logo{
-    margin-left: 1.5rem;
-}
-.nav-item{
-    font-size: 2rem;
-    list-style-type: none;
-    margin-right: 1.5rem;
-}
 .banner-title{
     color: #aaaaaa;
-    height: 40rem;
-    // background-color: purple;
+    height: 15rem;
+    // background-color: purple; //temp
 }
 .banner-title h1{
-    font-size: 5rem; //Large font sizes ruining scaling
+    font-size: 4rem; //Large font sizes ruining scaling
                      //Look into media queries to change font size as you scale
 }
 .banner-title h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .main-body{
     min-height: 70%;
+}
+.bio-pic{
+    // height: 100px;
+    
+    width: 250px; //Need after sorting out parent row / column height?
+    border: 3px solid #000000;
+    border-radius: 50%;
+}
+
+// --------------------
+// ***Media Queries ***
+// --------------------
+
+@media screen and (min-width: 540px){
+    .banner-title{
+        height: 20rem;
+    }
+    .banner-title h1{
+        font-size: 6rem;
+    }
+    .banner-title h3{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .banner-title{
+        height: 25rem;
+    }
+    .banner-title h1{
+        font-size: 8rem;
+    }
+    .banner-title h3{
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width: 1080px){
+    .banner-title{
+        height: 30rem;
+    }
+    .banner-title h1{
+        font-size: 12rem;
+    }
+    .banner-title h3{
+        font-size: 6rem;
+    }
+}
+@media screen and (min-width: 1440px){
+    .banner-title{
+        height: 35rem;
+    }
+    .banner-title h1{
+        font-size: 16rem;
+    }
+    .banner-title h3{
+        font-size: 8rem;
+    }
+}
+@media screen and (min-width: 1800px){
+    .banner-title{
+        height: 40rem;
+    }
+    .banner-title h1{
+        font-size: 20rem;
+    }
+    .banner-title h3{
+        font-size: 10rem;
+    }
 }
