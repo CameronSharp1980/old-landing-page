@@ -4,7 +4,8 @@
 
 body{
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    // height: 100vh;
     font-size: 100%;
     background-image: url("../img/pexels-photo-235994.jpeg");
     background-repeat: repeat;
@@ -17,9 +18,8 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 .purple{
     background-color: purple; //to test divs
 }
-.test{ //delete later
-    outline: 2px solid red;
-    background-color: purple;
+.test{ //Constantly changing test class - Delete later
+    width: 100%;
 }
 
 // -------------------
@@ -29,86 +29,40 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 .flex{
     display: flex;
 }
-.flex-dir-col{
-    flex-direction: column;
-}
 .v-center{
     align-items: center;
 }
-.h-center{
-    justify-content: center;
+.top-nav{
+    color: #aaaaaa; //temp
+    min-height: 10rem; //temp
+    // background-color: yellow; //temp
 }
-.h-flex-end{
-    align-items: flex-end; 
+.logo{
+    // To be defined
+}
+.nav-list-div{
+    // To be defined
 }
 .space-between{
     justify-content: space-between;
 }
-.bio-col{
-    height: 25rem;
-}
-.bio-col h2{
-    padding: 3rem;
-    // font-size: 3rem;
-}
-
-// ---------------------
-// ***Bootstrap Section Related Rules***
-// ---------------------
-
-// ***Row / Column***
-.opaque{
-    background-color: white;
-    // background-image: url("../img/pexels-photo-220182.jpeg");
-    // height: 30rem; //Essentially a static height  *Do not use*(?)
-}
-.transparent{
-    // height: 30rem; //Essentially a static height *Do not use*(?)
-}
-.bio-row{
-    height: 25rem;
-}
-.full-height{
-    height: 100%;
-}
-.skills-col{
-    outline: 2px solid red;
-}
-.skills-thumb-img{
-    width: 150px;
-}
-
-// ------------------
-// ***Custom Rules***
-// ------------------
-
-.logo{
-    margin-left: 1.5rem;
-}
-.top-nav{
-    color: #aaaaaa; //temp
-    height: 10rem; //temp
-    // background-color: yellow; //temp
+.top-nav-list{
+    // To be defined
 }
 .nav-item{
     font-size: 2rem;
     list-style-type: none;
     margin-right: 1.5rem;
 }
-.banner{
-    min-height: 100vh;
-    background-image: url("../img/pexels-photo-360912-25percent.jpg");
+.flex-dir-col{
+    flex-direction: column;
 }
-.bck-norpt{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.bck-rpt{
-    background-repeat: repeat;
+.h-center{
+    justify-content: center;
 }
 .banner-title{
     color: #aaaaaa;
-    height: 15rem;
+    min-height: 15rem;
     // background-color: purple; //temp
 }
 .banner-title h1{
@@ -118,15 +72,119 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 .banner-title h3{
     font-size: 2rem;
 }
-.main-body{
-    min-height: 70%;
+
+// ---------------------
+// ***Bootstrap Section Related Rules***
+// ---------------------
+
+// ***Row / Column General***
+
+.opaque{
+    background-color: white;
 }
-.bio-pic{
-    // height: 100px;
-    
-    width: 250px; //Need after sorting out parent row / column height?
+.transparent{
+    // To be defined
+}
+
+// *** Bio Section
+
+.bio-section{
+    // To be defined
+}
+div.thumbnail img.bio-pic{
+    // max-width: 250px; //Need after sorting out parent row / column height?
+    // max-width: 250px;
     border: 3px solid #000000;
     border-radius: 50%;
+}
+.bio-col,{
+    min-height: 25rem;
+}
+.bio-col h2{
+    padding: 3rem;
+    // font-size: 3rem;
+}
+
+// *** Skills Section
+
+.skills-section{
+    background-image: url("../img/pexels-photo-276452.jpeg");
+}
+.section-title-col{
+    // To be defined
+}
+.section-title{
+    color: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.skills-wrapper-row{
+    // To be defined
+}
+.skills-col{
+    // To be defined
+}
+.skills-row{
+    // To be defined
+}
+.squared{
+    height: 320px;
+    width: 320px;
+    margin: auto;
+}
+
+// *** Tile card rules
+
+.tilez{
+    border-radius: 15px;
+}
+.bio-tile{
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 100px #000000;
+    border-radius: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.skills-tile{
+    background-color: rgba(200, 200, 200, .85);
+    box-shadow: 0 0 100px #aaaaaa;
+    margin-bottom: 5em;
+}
+.bio-pic-img{
+
+}
+.skills-thumb-img{
+    height: 150px;
+    width: 150px;
+}
+.thumb-caption{
+    color: #000000;
+    padding: 1em;
+    display: inline-block;
+    border-bottom: 1px solid #000000;
+}
+.thumb-caption-text{
+    font-size: 2em;
+}
+
+// ------------------
+// ***Custom Rules***
+// ------------------
+
+.bck-norpt{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner{
+    min-height: 100vh;
+    background-image: url("../img/pexels-photo-360912-25percent.jpg");
+}
+.bck-rpt{
+    background-repeat: repeat;
+}
+.main-body{
+    // To be defined
 }
 
 // --------------------
@@ -135,7 +193,7 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 
 @media screen and (min-width: 540px){
     .banner-title{
-        height: 20rem;
+        // height: 20rem; //Change base height propery to min-height. Maybe delete this?
     }
     .banner-title h1{
         font-size: 6rem;
@@ -146,7 +204,7 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 }
 @media screen and (min-width: 768px){
     .banner-title{
-        height: 25rem;
+        // height: 25rem; //Change base height propery to min-height. Maybe delete this?
     }
     .banner-title h1{
         font-size: 8rem;
@@ -157,7 +215,7 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 }
 @media screen and (min-width: 1080px){
     .banner-title{
-        height: 30rem;
+        // height: 30rem; //Change base height propery to min-height. Maybe delete this?
     }
     .banner-title h1{
         font-size: 12rem;
@@ -168,7 +226,7 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 }
 @media screen and (min-width: 1440px){
     .banner-title{
-        height: 35rem;
+        // height: 35rem; //Change base height propery to min-height. Maybe delete this?
     }
     .banner-title h1{
         font-size: 16rem;
@@ -179,7 +237,7 @@ h1, h2, h3, h4, h5, h6, .nav-list{
 }
 @media screen and (min-width: 1800px){
     .banner-title{
-        height: 40rem;
+        // height: 40rem; //Change base height propery to min-height. Maybe delete this?
     }
     .banner-title h1{
         font-size: 20rem;

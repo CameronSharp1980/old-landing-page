@@ -18,14 +18,11 @@
                 <h2>Logo Box!</h2>
             </div>
             <div class="flex v-center top-nav nav-list-div">
-                <!-- Style .nav-list-div class -->
                 <ul class="flex space-between top-nav-list">
-                    <!-- Style .top-nav-list class -->
-                    <li class="nav-item top-nav-item">Item</li>
-                    <li class="nav-item top-nav-item">Item</li>
-                    <li class="nav-item top-nav-item">Item</li>
-                    <!-- Style .top-nav-item class -->
-                    <li class="nav-item top-nav-item">Item</li>
+                    <li class="nav-item">Item 1</li>
+                    <li class="nav-item">Item 2</li>
+                    <li class="nav-item">Item 3</li>
+                    <li class="nav-item">Item 4</li>
                 </ul>
             </div>
         </div>
@@ -35,89 +32,95 @@
         </div>
     </div>
     <div class="main-body container-fluid">
-        <!-- rows-x and col-row classes are undefined as yet -->
-        <div class="row transparent bck-norpt">
-            <div class="col-sm-5 text-center bio-col">
-                <img src="../img/bio-pic.jpg" alt="Cameron Sharp Bio Picture" class="bio-pic">
+        <div class="row transparent bck-norpt bio-secton">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-center bio-col">
+                <div class="thumbnail squared tilez bio-tile">
+                    <img src="../img/bio-pic.jpg" alt="Cameron Sharp Bio Picture" class="bio-pic">
+                </div>
             </div>
-            <div class="col-sm-7 text-center col-row bio-col">
-                <h2>Enthusiastic, driven and attentive to detail, a developer specializing in JavaScript and C#.
-                </h2>
+            <div class="col-sm-12 col-md-8 col-lg-8 text-center bio-col">
+                <h2>Enthusiastic, driven and attentive to detail, a developer specializing in JavaScript and C#.<br></h2>
+                <h2>"Quote here"</h2>
             </div>
         </div>
-        <div class="row row-2-label opaque bck-rpt">
-            <div class="col-sm-12 text-center col-row">
-                <h1>Skills</h1>
+        <div class="row opaque bck-norpt skills-section">
+            <div class="col-sm-12 text-center section-title-col">
+                <div class="section-title">
+                    <h1>Skills</h1>
+                </div>
+                <div class="row skills-wrapper-row">
+                    <div class="col-sm-12 col-md-4 skills-col text-center">
+                        <div class="thumbnail squared tilez skills-tile margin-bottom-5em">
+                            <img src="../img/html5-logo.svg" alt="HTML5 logo thumbnail" class="skills-thumb-img">
+                            <div class="thumb-caption">
+                                <h2>HTML5</h2>
+                            </div>
+                            <div class="thumb-caption-text">
+                                <p>Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 skills-col text-center">
+                        <div class="thumbnail squared tilez skills-tile margin-bottom-5em">
+                            <img src="../img/bootstrap-solid.svg" alt="CSS3 logo thumbnail" class="skills-thumb-img">
+                            <div class="thumb-caption">
+                                <h2>CSS3</h2>
+                            </div>
+                            <div class="thumb-caption-text">
+                                <p>Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 skills-col text-center">
+                        <div class="thumbnail squared tilez skills-tile margin-bottom-5em">
+                            <img src="../img/js-logo.svg" alt="Javascript Thumbnail" class="skills-thumb-img">
+                            <div class="thumb-caption">
+                                <h2>Javascript</h2>
+                            </div>
+                            <div class="thumb-caption-text">
+                                <p>Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row skills-row">
-                    <!-- Define skills-row class -->
-                    <div class="col-sm-12 col-md-4 skills-col text-center">
-                        <!-- Define skills-col class -->
-                        <div class="thumbnail">
-                            <!-- <div class="image-placeholder100"></div> -->
-                            <img src="../img/bio-pic.jpg" alt="Skills Thumbnail" class="skills-thumb-img">
-                            <div class="caption">
-                                <h3>Caption</h3>
+                    <div class="col-sm-12 col-md-4 col-md-offset-2 skills-col text-center">
+                        <div class="thumbnail squared tilez skills-tile margin-bottom-5em">
+                            <img src="../img/bootstrap-solid.svg" alt="Bootstrap Thumbnail" class="skills-thumb-img">
+                            <div class="thumb-caption">
+                                <h2>Bootstrap</h2>
+                            </div>
+                            <div class="thumb-caption-text">
                                 <p>Lorem, ipsum dolor.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 skills-col text-center">
-                        <div class="thumbnail">
-                            <!-- <div class="image-placeholder100"></div> -->
-                            <img src="../img/bio-pic.jpg" alt="Skills Thumbnail" class="skills-thumb-img">
-                            <div class="caption">
-                                <h3>Caption</h3>
-                                <p>Lorem, ipsum dolor.</p>
+                        <div class="thumbnail squared tilez skills-tile margin-bottom-5em">
+                            <img src="../img/bootstrap-solid.svg" alt="Placeholder Thumbnail" class="skills-thumb-img">
+                            <div class="thumb-caption">
+                                <h2>Placeholder</h2>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 skills-col text-center">
-                        <div class="thumbnail">
-                            <!-- <div class="image-placeholder100"></div> -->
-                            <img src="../img/bio-pic.jpg" alt="Skills Thumbnail" class="skills-thumb-img">
-                            <div class="caption">
-                                <h3>Caption</h3>
-                                <p>Lorem, ipsum dolor.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row skills-row">
-                        <div class="col-sm-12 col-md-4 col-md-offset-2 skills-col text-center">
-                            <div class="thumbnail">
-                                <!-- <div class="image-placeholder100"></div> -->
-                                <img src="../img/bio-pic.jpg" alt="Skills Thumbnail" class="skills-thumb-img">
-                                <div class="caption">
-                                    <h3>Caption</h3>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4 skills-col text-center">
-                            <div class="thumbnail">
-                                <!-- <div class="image-placeholder100"></div> -->
-                                <img src="../img/bio-pic.jpg" alt="Skills Thumbnail" class="skills-thumb-img">
-                                <div class="caption">
-                                    <h3>Caption</h3>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
+                            <div class="thumb-caption-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quas nostrum ullam modi vel doloribus?</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row row-3 transparent bck-norpt">
-            <div class="col-sm-12 text-center col-row">
+        <div class="row row-3 transparent bck-norpt x-section">
+            <div class="col-sm-12 text-center">
                 <h1>Placeholder</h1>
             </div>
         </div>
-        <div class="row row-4 opaque bck-rpt">
-            <div class="col-sm-12 text-center col-row">
+        <div class="row row-4 opaque bck-rpt x-section">
+            <div class="col-sm-12 text-center">
                 <h1>Placeholder</h1>
             </div>
         </div>
-        <div class="row row-5 transparent bck-norpt">
-            <div class="col-sm-12 text-center col-row">
+        <div class="row row-5 transparent bck-norpt x-section">
+            <div class="col-sm-12 text-center">
                 <h1>Placeholder</h1>
             </div>
         </div>
