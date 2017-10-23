@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  background-image: url("../img/pexels-photo-235994.jpeg");
+  background-image: url("../img/pexels-photo-459411.jpeg");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -68,11 +68,6 @@ h1, h2, h3, h4, h5, h6, .nav-list {
   background-color: white;
 }
 
-div.thumbnail img.bio-pic {
-  border: 3px solid #000000;
-  border-radius: 50%;
-}
-
 .bio-col {
   min-height: 25rem;
 }
@@ -91,6 +86,14 @@ div.thumbnail img.bio-pic {
   padding-bottom: 2em;
 }
 
+.section-title.portfolio-title h1 {
+  display: inline-block;
+  padding: .25em;
+  border-radius: 25px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
 .squared {
   height: 320px;
   width: 320px;
@@ -101,12 +104,32 @@ div.thumbnail img.bio-pic {
   border-radius: 15px;
 }
 
-.bio-tile {
+.bio-pic-tile {
   background-color: rgba(0, 0, 0, 0.85);
   box-shadow: 0 0 100px #000000;
   border-radius: 50%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+div.bio-pic-tile img.bio-pic {
+  border: 3px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  margin-top: -125px;
+  margin-left: -125px;
+}
+
+.bio-quote-tile {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 100px #000000;
+  color: #ffffff;
+  min-height: 320px;
+  margin-top: 2rem;
 }
 
 .skills-tile {
@@ -129,6 +152,47 @@ div.thumbnail img.bio-pic {
 
 .thumb-caption-text {
   font-size: 2em;
+}
+
+.portfolio-tile {
+  background-color: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 100px #000000;
+  margin-bottom: 5em;
+}
+
+.contact-section {
+  background-color: #666666;
+  color: white;
+  min-height: 20rem;
+  line-height: 20rem;
+}
+
+.contact-line {
+  font-size: 6rem;
+}
+
+.github-span {
+  color: #171515;
+}
+
+.slack-span {
+  color: #e8a723;
+}
+
+.linkedin-span {
+  color: #007bb6;
+}
+
+.facebook-span {
+  color: #3b5998;
+}
+
+.reddit-span {
+  color: #ff3f18;
+}
+
+.skype-span {
+  color: #00aef0;
 }
 
 .bck-norpt {
