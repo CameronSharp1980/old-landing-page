@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6, .nav-list {
 .banner-title {
   color: #aaaaaa;
   min-height: 15rem;
+  padding-top: 25vh;
 }
 
 .banner-title h1 {
@@ -98,6 +99,10 @@ h1, h2, h3, h4, h5, h6, .nav-list {
   height: 320px;
   width: 320px;
   margin: auto;
+}
+
+.kanban {
+  font-family: "Rock Salt", cursive;
 }
 
 .tilez {
