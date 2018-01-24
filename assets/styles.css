@@ -205,6 +205,11 @@ div.portfolio-tile:hover div.portfolio-glass {
   font-size: 6rem;
 }
 
+.contact-text {
+  font-size: 3rem;
+  line-height: 16px;
+}
+
 .github-span {
   color: #171515;
 }
