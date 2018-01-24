@@ -186,6 +186,7 @@ div.bio-pic-tile img.bio-pic{
     background-color: rgba(200, 200, 200, .85);
     box-shadow: 0 0 100px #aaaaaa;
     margin-bottom: 5em;
+    padding-top: 50px;
 }
 .skills-thumb-img{
     height: 150px;
@@ -201,12 +202,34 @@ div.bio-pic-tile img.bio-pic{
     font-size: 2em;
 }
 .portfolio-tile{
-    background-color: rgba(0, 0, 0, .65);
-    box-shadow: 0 0 100px #000000;
+    position: relative;
+    // background-color: rgba(0, 0, 0, .65);
+    // box-shadow: 0 0 100px #000000;
     margin-bottom: 5em;
 }
+div.portfolio-glass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 320px;
+    width: 320px;
+    padding: 50px;
+    display: none;
+}
+div.portfolio-tile:hover div.portfolio-glass{
+    display: block;
+    background-color: rgba(0, 0, 0, .75);
+}
+.portfolio-glass-title{
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 10px;
+}
+.portfolio-glass-text{
+    color: #ffffff;
+}
 .portfolio-thumb-img{
-    // To be defined
+    width: 100%;
+    border-radius: 15px;
 }
 
 // *** Contact Section
